@@ -14,3 +14,21 @@
     puts "the num value is #{num} and added with 10 is #{num + 10}" 
     #OUTPUT: the num value is 100 and added with 10 is 110
 ```
+- Classes
+```ruby
+   class Square
+
+        def initialize(side_length)
+            #@<variable_name> are use to define a variable that can be use within the class.
+            @side_length = side_length 
+        end
+
+        def display()
+            puts @side_length
+        end
+    end
+
+    my_square = Square.new(10)
+
+    my_square.display   
+```
