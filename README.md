@@ -18,17 +18,20 @@
 ```ruby
    class Square
 
+        # Instead of using the getters and setters for the variable defined within the class you can use "class attr" use colon then variable name. ex: :side_length. 
+
+        # Additionally you use attr_accessor to call directly the defined variable inside a class and update its value
+        
+        attr_accessor :side_length
+
         def initialize(side_length)
             #@<variable_name> are use to define a variable that can be use within the class.
             @side_length = side_length 
         end
 
-        def display()
-            puts @side_length
-        end
     end
 
     my_square = Square.new(10)
 
-    my_square.display   
+    puts my_square.side_length
 ```
